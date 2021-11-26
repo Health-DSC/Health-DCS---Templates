@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="C:\src\Proyectos\SOFTWARE\img\Health-PNG-Image.png">
+    <link rel="stylesheet" href="C:\src\Proyectos\SOFTWARE\CSS\lato.css">
+    <link rel="stylesheet" href="C:\src\Proyectos\SOFTWARE\CSS\styles.css">
+    <title>Registro de Usuario - HEALTH DCS</title>
+</head>
+
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHSSZBT" height="0" width="0" style="display:none; visibility:hidden"> </iframe>
+    </noscript>
+    
+    
+    <header>
+        <nav class="headerContainer">
+            <img class="loadLazy visibleLazy" data-src="C:\src\Proyectos\SOFTWARE\img\Health-PNG-Image.png" alt="" src="C:\src\Proyectos\SOFTWARE\img\Health-PNG-Image.png">
+            <a class="headerLogo">Health DSC</a>
+            <ul class="headerMenu bold">
+                
+                <li class="menuLink  "> <a href="C:\src\Proyectos\SOFTWARE\HTML\MEDICO\Nosotros.html"> NOSOTROS </a> </li>
+                <li class="menuLink  "> <a href="C:\src\Proyectos\SOFTWARE\HTML\MEDICO\Servicios.html"> SERVICIOS </a>
+                    <ul class="subMenu" style="display: none;">                    
+                        <li class="subMenuLink"> <a>Centro de Imágenes</a> </li>
+                        <li class="subMenuLink"> <a>Centro Quirúrgico</a> </li>
+                        <li class="subMenuLink"> <a>Laboratorio</a> </li>
+                        <li class="subMenuLink"> <a>Servicios Adicionales</a> </li>
+    
+                    </ul>
+                </li>
+                <li class="menuLink  "> <a href="C:\src\Proyectos\SOFTWARE\HTML\MEDICO\Especialidades.html"> ESPECIALIDADES </a> </li>
+                
+                <li class="menuLink  "> <a> CONTACTO </a>
+                    <ul class="subMenu" style="display: none;">                    
+                        <li class="subMenuLink"> <a>Correo oficial: clinica@gmail.com</a><br> </li>
+                        <li class="subMenuLink"> <a>Central telefónica: 987654321</a> </li>
+                        
+    
+                    </ul>
+                </li>
+
+                <li class="menuLink  "> <a href="C:\src\Proyectos\SOFTWARE\HTML\MEDICO\PreguntasFrecuentes.html"> PREGUNTAS FRECUENTES </a> </li>
+                <li class="menuLink bgRed ">
+                    <a> <img class="loadLazy visibleLazy" data-src="https://www.clinicapj.org.pe/images/central-telefonica.svg" alt="" src="https://www.clinicapj.org.pe/images/central-telefonica.svg"> BIENVENIDO </a>
+                    
+                </li>
+                        
+            </ul>
+    
+        </nav>
+    </header>
+
+    <main>
+        <div class="contentBody ">
+            <div class="centerBody allWithoutMenu">
+                <h2>REGISTRO DE USUARIO</h2>
+                <br>
+                <form id="formstep1" novalidate="novalidate">
+                    <div class="contCamp centerCamp">
+                        <select name="tipo_documento" id="tipdoc" required="" aria-required="true" class="sucess" aria-invalid="false">
+                            <option value="0">Tipo de Documento</option>
+                            <option value="D">DNI</option>
+                            <option value="C">Carnet de Extranjería</option>
+                            <option value="P">Pasaporte</option>
+                            <option value="R">RUC</option>
+                        </select>
+                        <br>
+                        <label id="tipdoc-error" class="error valid" for="tipdoc"></label>
+                    </div>
+                    <div class="contCamp oneCamp errorInput">
+                        <label for="numdoc">Número de Documento <span>*</span></label>
+                        <input type="text" name="numero_documento" id="numdoc" required="" value="" aria-required="true"> </div>
+                    <div class="contCamp oneCamp errorInput">
+                        <label for="">Correo <span>*</span></label>
+                        <input type="text" name="correo" id="correo" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="" aria-required="true"> </div>
+                    <div class="contCamp oneCamp errorInput">
+                        <label for="">Celular<span>*</span></label>
+                        <input type="text" name="telefono_celular" id="celular" pattern="[0-9]{9}" required="" value="" aria-required="true" class="inputError" aria-invalid="true">
+                        <br>
+                        <label id="celular-error" class="error valid" for="celular">El número de celular debe ser de 9 dígitos</label>
+                    </div>
+                    <div class="contCamp oneCamp errorInput">
+                        <label for="">Contraseña <span>*</span></label>
+                        <input type="password" name="password" id="clave" required="" value="" aria-required="true" class="sucess" aria-invalid="false">
+                        <br>
+                        <label id="clave-error" class="error valid" for="clave" style="display: inline;"></label>
+                    </div>
+                    <div class="contCamp oneCamp errorInput">
+                        <label for="">Repetir contraseña <span>*</span></label>
+                        <input type="password" name="password_again" id="clave_again"> </div>
+                    <div class="contBtnAround marginTB"> <a class="btn btnBig btnRed btnNext btnInput" id="btnstep1">Continuar</a> </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="https://www.clinicapj.org.pe/js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="https://www.clinicapj.org.pe/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="https://www.clinicapj.org.pe/js/sweetalert2.all.min.js" type="text/javascript"></script>
+    <script src="https://www.clinicapj.org.pe/js/jquery.datetimepicker.full.min.js" type="text/javascript"></script>
+    <script src="https://www.clinicapj.org.pe/js/custom.js" type="text/javascript"></script>
+    <script src="https://www.clinicapj.org.pe/js/clinica.js" type="text/javascript"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122325028-2" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-122325028-2');
+    </script>
+
+</html>
